@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Calculadora de gaiola para twisters</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="introducao">
+                <h1 id="titulo">Calculadora de gaiola para twisters</h1>
+                <img src="imagens/gaiolarato.jpg">
+                <p>Uma dupla de twister precisa de no mínimo uma gaiola de 40 x 60 x 60cm, abaixo disso a gaiola é inadequada para twisters.</p>
+            </div>
+            <div class="calculadora">
+                <form>
+                    <h3 id="tituloCalculadora">Calculadora</h3>
+                    <p>Coloque as medidas em centímetros</p>
+    
+                    <label for="largura" class="tituloInput">Largura</label>
+                    <input type="number" id="largura" class="medidas" placeholder="Ex: 40">
+    
+                    <label for="altura" class="tituloInput">Altura</label>
+                    <input type="number" id="altura" class="medidas" placeholder="Ex: 60">
+    
+                    <label for="comprimento" class="tituloInput">Comprimento</label>
+                    <input type="number" id="comprimento" class="medidas" placeholder="Ex: 60">
+                </form>
+
+                <button onClick="calc()">Calcular!</button>
+    
+                <div id="resultado" class="resultado hide">
+                    <span><p id="quantidade" class="quantidade"></p></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
